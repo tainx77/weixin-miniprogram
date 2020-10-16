@@ -1,0 +1,62 @@
+/* pages/test.wxss */
+
+#myMap {
+  height: 100vh;
+  width: 100%;
+}
+.localtion-view {
+  position: absolute;
+  bottom: 60rpx;
+  right: 30rpx;
+}
+.map-user {
+  position: absolute;
+  top: 70rpx;
+  left: 40rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+.map-user .user-view {
+  position:relative;
+  display: flex;
+}
+.map-user .btn-image {
+  position:absolute;
+  width: 60rpx;
+  height: 60rpx;
+}
+.user-btn {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.map-code {
+  position: absolute;
+  bottom: 70rpx;
+  left: 325rpx;
+  background-color: #1ab6ff;
+  padding: 30rpx;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.code-btn {
+  width: 70rpx;
+  height: 70rpx;
+}
+.marker-item {
+  position: absolute;
+  background-color: #ffffff;
+  width: 82.5%;
+  height: 250rpx;
+  left: 5%;
+  bottom: 70rpx;
+  border-radius: 20rpx;
+  padding: 30rpx;
+}
+.marker-item .item-img {
+  width:200rpx;
+  height:170rpx;
+  border-radius: 20rpx;
+  
+}

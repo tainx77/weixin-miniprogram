@@ -1,0 +1,32 @@
+<!--pages/test.wxml-->
+<view class="map_container">
+  <map id='myMap' longitude='{{longitude}}' latitude='{{latitude}}' scale='{{scale}}' markers='{{markers}}' bindmarkertap="eventhandle" bindtap="clickMap"
+    show-location>
+    <view class="localtion-view" bindtap="onClick">
+      <image class="user-btn" src="../../static/dw.png"></image>
+    </view>
+    <view class="map-user">
+      <view wx:if="{{canIUse}}" class="user-view">
+        <button style="width:70rpx;height:70rpx;border-radius: unset;border: unset;" plain open-type="getUserInfo"
+          bindgetuserinfo="bindGetUserInfo" class="user-button"></button>
+          <image   class="btn-image" src="../../static/user.png"></image>
+      </view>
+      <image wx:else class="user-btn" src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view>
+      <view class="map-code">
+        <image class="code-btn" src="../../static/code.png"></image>
+      </view>
+    </view>
+    <view class="marker-item" wx:if="{{isShow}}">
+      <view style="display: flex;flex-direction: row;">
+        <image class="item-img" src="../../static/yy.jpg"></image>
+        <view style="padding:20rpx">
+          <view style="font-weight: 600;">武汉太医堂中医院</view>
+          <view>08:00-21:00</view>
+        </view>
+      </view>
+    </view>
+  </map>
+
+</view>
